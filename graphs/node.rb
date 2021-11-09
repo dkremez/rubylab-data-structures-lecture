@@ -1,8 +1,8 @@
 class Node
-  attr_accessor :name, :neighbors
+  attr_accessor :val, :neighbors
 
-  def initialize(name)
-    @name = name
+  def initialize(val)
+    @val = val
     @neighbors = []
   end
 end
