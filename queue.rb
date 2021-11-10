@@ -1,10 +1,13 @@
 class Queue
-  class EmptyQueueError < StandardError; end
+  class EmptyQueueError < StandardError
+  end
 
-  class QueueOverflowError < StandardError; end
+  class QueueOverflowError < StandardError
+  end
 
-  def initialize
+  def initialize(size)
     @store = []
+    @size = size
   end
 
   def dequeue

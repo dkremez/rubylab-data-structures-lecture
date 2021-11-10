@@ -1,7 +1,9 @@
 class Stack
-  class EmptyStackError < StandardError; end
+  class EmptyStackError < StandardError
+  end
 
-  class StackOverflowError < StandardError; end
+  class StackOverflowError < StandardError
+  end
 
   def initialize(size)
     @store = []
